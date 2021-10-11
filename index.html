@@ -4,6 +4,9 @@
 
 <head>
 
+        <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+
+
     <title></title>
 
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -14,7 +17,11 @@
 
 <body>
 
+    <div class="parent-loader" id="loader">
 
+    <div class="loader"></div>
+
+</div>
     <!-- Navbar -->
 
 
@@ -25,7 +32,9 @@
 
 
 
+
         <ul>
+
 
             
             <li><a href="#home" class="home">Home</a></li>
@@ -48,30 +57,43 @@
 
     <!-- Home -->
 
+    <div class="head_m">
+
     <div class="m_home" id="home">
 
         <div class="img_m">
 
         <img src="img/Wavy Buddies - Address.png" id="home_img" />
 
+
+
     </div>
 
+
+<div class="head_mword">
 
         <div class="m_word">
 
             <h2>Hi <span id="name">Ever One!</span></h2>
 
-            <h1>Welcome From My Portfolio</h1>
+            <h1 class="welcome">Welcome From My Portfolio</h1>
             <p>Kaung Myat Kyaw<span>(Frontend Developer)</span></p>
 
-            <button type="submit"><a href="#">Get Start >></a></button>
+            <button type="submit" class="h_btn"><a href="#">Get Start >></a></button>
 
         </div>
+
     </div>
+    </div>
+
+
+</div>
 
     <br><br><br><br><br><br><br><br>
 
     <hr />
+
+     <div class="hr"></div>
 
 
 
@@ -88,7 +110,7 @@
             <div class="underline"></div>
 
         </div>
-
+<div class="h_a">
 
         <div class="about_img" id="about_img"></div>
 
@@ -103,24 +125,30 @@
 
             I have complete the HTML5 and CSS3 from Udemy and Linkedin and Javascript Basice from W3school
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ipsum in? Doloribus 
+            I have little experience at fronted end project with my team.I have been complete adobe xd from linkedin.
 
-            quaerat laborum, sed pariatur at modi. Beatae ab quam laboriosam dolorem ipsum tempora quas
+            So,I can draw little illustration for website and for frontend.I like creative.So,when i am boring
 
-            quaerat laborum, sed pariatur at modi. Beatae ab quam laboriosam dolorem ipsum tempora quas</p>
+            i often create mini CSS animation.By the way,i want to be a junior developer.</p>
 
         </b>
 
     </div>
 
-        <img src="img/undraw_road_sign_mfpo.svg" />
+</div>
+
+        <img src="img/undraw_road_sign_mfpo.svg" class="tree" />
 
 
     </div>
 
+   <img src="img/undraw_road_sign_mfpo.svg" class="tree_468" />
+
 </section>
 
-    <hr />
+<hr>
+
+    <div class="hr"></div>
 
 
     <br><br><br>
@@ -163,9 +191,11 @@
 
     <hr>
 
+     <div class="hr"></div>
+
 
     <!-- Skills Bar -->
-    <h1 class="s_h1">My <span>Skills</span></h1>
+    <h1 class="s_h1 skill_h1">My <span>Skills</span></h1>
 
 
 
@@ -238,14 +268,20 @@
 
 
 
+
+
+
+ <div class="hr"></div>
     <br>
     <hr />
+
+
 
     <!-- Services -->
 
     <div id="service">
         <br><br>
-        <h1 class="s_h1">My Services</h1>
+        <h1 class="s_h1 s_h2"><span>My</span> Services</h1>
         <br><br>
         <div class="services">
             
@@ -295,10 +331,13 @@
 
 
 
+ <div class="hr"></div>
+
+
     <!-- Client Review -->
 
 
-    <h1 class="review_h1">Client Review</h1>
+    <h1 class="review_h1">Client <span>Review</span></h1>
 
     <div class="review">
 
@@ -354,6 +393,9 @@
     <hr>
 
 
+
+
+ <div class="hr"></div>
 
     <!-- contact me -->
 
@@ -450,11 +492,26 @@
     
 </div>
 
-     
 
 </body>
 
 <script>
+
+
+var preloader = document.getElementById('loader');
+
+
+
+window.addEventListener('load',vanish);
+
+function vanish() {
+    preloader.style.display = "none";
+
+
+}
+
+
+
 
 
     // var yourname = prompt("What is your name");
@@ -502,7 +559,7 @@ function scrollFunction1() {
     // about me
 
     if (document.documentElement.scrollTop > 170) {
-    document.getElementById("about_img").style.left = "10px";
+    document.getElementById("about_img").style.left = "50px";
     } 
 
 
