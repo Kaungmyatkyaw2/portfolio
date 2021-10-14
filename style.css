@@ -388,6 +388,7 @@ hr {
   margin-top: -30px;
   transition: 1s;
   z-index: -1;
+  transform: translateX(-20px);
 }
 
 .complete .underline_2 {
@@ -946,7 +947,7 @@ br{
   }
 
   .complete h2 {
-      left: 445px;
+      left: 460px;
     width: 300px;
   }
 
@@ -1237,7 +1238,7 @@ br{
 
   .complete h2 {
     font-size: 45px; 
-      margin-left: -320px;
+      margin-left: -300px;
       left: 305px;
     width: 600px;
   }
@@ -2317,9 +2318,5 @@ li.menu{
   }
 
 }
-
-
-
-
 
 
